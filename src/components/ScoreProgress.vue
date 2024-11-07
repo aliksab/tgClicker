@@ -16,5 +16,5 @@ import { computed } from 'vue'
 
 const store = useScoreStore()
 
-const progress = computed(() +. (100 * store.currentScore) / store.level.value)
+const progress = computed(() => (100 * store.currentScore) / store.level.value)
 </script>
