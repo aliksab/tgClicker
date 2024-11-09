@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
-
+import { config } from 'dotenv';
+config()
 const SUPABASE_URL='https://yvgixqrdlesydfrdvwbj.supabase.co'
 console.log('Variables', process.env)
 

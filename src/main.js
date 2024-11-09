@@ -2,6 +2,7 @@ import './assets/main.css'
 
 import { config } from 'dotenv';
 config()
+console.log('ENV_TEST', process.env)
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
