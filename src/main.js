@@ -1,5 +1,8 @@
 import './assets/main.css'
 
+import { config } from 'dotenv';
+config()
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
