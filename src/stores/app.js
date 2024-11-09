@@ -1,4 +1,4 @@
-import { getOrCreateUser, registerRef, fetchTasks } from "@/api/app";
+import { getOrCreateUser, registerRef, fetchTasks, completeTask } from "@/api/app";
 import { defineStore } from "pinia";
 import { useScoreStore } from "./score";
 import { useTelegram } from "@/services/telegram";
