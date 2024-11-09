@@ -1,6 +1,5 @@
 import { Telegraf, Markup } from 'telegraf'
-import { config } from 'dotenv';
-config()
+import 'dotenv/config';
 process.env.TG_TOKEN ? console.log('Variables loaded') : console.log('Error')
 
 const bot = new Telegraf(process.env.TG_TOKEN)
