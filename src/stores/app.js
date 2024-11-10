@@ -7,7 +7,7 @@ const { user } = useTelegram()
 
 export const useAppStore = defineStore('app', {
     state: () => ({
-        users: {},
+        user: {},
         tasks: [],
     }),
     actions: {

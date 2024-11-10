@@ -9,7 +9,7 @@
     <h3 v-if="friends.length === 0">No friends yet</h3>
 
     <ul class="list">
-      <li class="list-item" v-for="friend in friend" :key="friend.id">
+      <li class="list-item" v-for="friend in friends" :key="friend.id">
         {{ friend.name }}
         <span class="list-btn done">50</span>
       </li>
@@ -26,10 +26,11 @@ const app = useAppStore()
 const { user } = useTelegram()
 const referalText = ref('Your referal')
 
-const friend = computed(() => Object.keys(app.users.friends).map((id) => ({
-  id,
-  name: app.users.friends[id],
-})))
+const friends = computed(() => Object.keys(app.user.friends).map((id) => ({
+    id,
+    name: app.user.friends[id],
+  }))
+)
 
 function copy() {
   navigator.clipboard.writeText('https://t.me/aliksabClicker_bot?start=' + user?.id)
